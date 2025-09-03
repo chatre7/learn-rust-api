@@ -1,3 +1,5 @@
+[![CI](https://github.com/chatre7/learn-rust-api/actions/workflows/ci.yml/badge.svg)](https://github.com/chatre7/learn-rust-api/actions/workflows/ci.yml)
+
 Rust Sample REST API (Axum + SQLx + PostgreSQL)
 
 Features
@@ -38,4 +40,3 @@ Project Structure
 Notes
 - On startup, migrations in `migrations/` run automatically.
 - Limit is clamped to [1,100] for listing.
-
