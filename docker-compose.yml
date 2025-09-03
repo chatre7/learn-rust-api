@@ -1,0 +1,24 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: app
+      POSTGRES_DB: app
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  api:
+    build: .
+    environment:
+      DATABASE_URL: postgres://app:app@db:5432/app
+      PORT: 8080
+      RUST_LOG: info
+    depends_on:
+      - db
+    ports:
+      - "8080:8080"
+volumes:
+  pgdata: {}
