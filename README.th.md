@@ -72,7 +72,7 @@
   - ถ้าใช้งานผ่าน WSL ให้แน่ใจว่า Docker Desktop เปิด integration กับ WSL และเช็คการแมป network ให้เรียบร้อย
 
 ## การหยุดการทำงาน
-- ถ้ารันด้วย `cargo run` กด `Ctrl+C` เพื่อปิดอย่างสุภาพ (graceful shutdown)
+- ถ้ารันด้วย `cargo run` กด `Ctrl+C` เพื่อปิดอย่างสมบูรณ์ (graceful shutdown)
 - ถ้ารันด้วย Docker Compose: `docker compose down`
 
 ## หมายเหตุสำหรับนักพัฒนา
@@ -88,4 +88,4 @@
 - `PUT /books/:id` -> อัปเดตบางฟิลด์ของ Book
 - `DELETE /books/:id` -> ลบ Book ตาม id
 
-ขอให้สนุกกับการเรียนรู้ Rust ครับ/ค่ะ!
+ขอให้สนุกกับการเรียนรู้ Rust ครับ
